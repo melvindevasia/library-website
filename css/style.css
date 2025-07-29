@@ -170,7 +170,7 @@
 }
 
 .blurred-page {
-  background: url('/images/libraryimage.jpg') no-repeat center center fixed;
+  background: url('../images/libraryimage.jpg') no-repeat center center fixed;
   background-size: cover;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);

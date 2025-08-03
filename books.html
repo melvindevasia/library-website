@@ -12,17 +12,33 @@
 <body class="blurred-page">
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
-  <div class="w-100 d-flex justify-content-between align-items-center px-3">
-    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
       <img src="images/logo.png" alt="Library Logo" style="height: 60px;" />
       <span class="brand-title">PRC Library</span>
     </a>
 
-    <div class="right-nav d-flex flex-wrap gap-3">
-      <a href="index.html" class="nav-box text-white text-decoration-none">Home</a>
-      <a href="books.html" class="nav-box text-white text-decoration-none">Books</a>
-      <a href="login.html" class="nav-box text-white text-decoration-none">Login</a>
-      <a href="signup.html" class="nav-box text-white text-decoration-none">Sign Up</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav gap-2">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link nav-box text-white">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="books.html" class="nav-link nav-box text-white">Books</a>
+        </li>
+        <li class="nav-item">
+          <a href="login.html" target="_blank" class="nav-link nav-box text-white">Login</a>
+        </li>
+        <li class="nav-item">
+          <a href="signup.html" target="_blank" class="nav-link nav-box text-white">Sign Up</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>

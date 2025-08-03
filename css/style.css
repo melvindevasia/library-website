@@ -8,40 +8,44 @@
 }
 
 .nav-box {
-  padding: 8px 16px;
+  padding: 8px 24px;          
+  min-width: 120px;           
+  text-align: center;
   border: 2px solid #0dcaf0;
   border-radius: 8px;
   background-color: rgba(13, 202, 240, 0.1);
   font-weight: 500;
   transition: all 0.3s ease;
-  text-align: center;
+  display: inline-block;
+  white-space: nowrap;        
 }
 
+.navbar .container {
+  max-width: 95%;
+}
 .nav-box:hover {
   background-color: #0dcaf0;
   color: black !important;
 }
 
 @media (max-width: 768px) {
-  .right-nav {
-    flex-direction: column;
-    align-items: flex-end;
-    margin-top: 10px;
+  .navbar-nav {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px;
   }
 
   .nav-box {
     width: 100%;
-    max-width: 180px;
-  }
-  .carousel-caption h5 {
-    font-size: 1.4rem;
-  }
-  .carousel-caption p {
-    font-size: 0.95rem;
+    max-width: 240px;
+    text-align: left; 
   }
 
-
+  .collapse.navbar-collapse {
+    align-items: flex-start;
+  }
 }
+
 
 .hero {
   background-image: url('../images/libraryimage.jpg');
